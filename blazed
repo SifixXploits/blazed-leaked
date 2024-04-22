@@ -63,7 +63,7 @@ gui.TextLabel_1.Size = UDim2.new(0, 106, 0, 57)
 gui.TextLabel_1.Name = "TextLabel"
 gui.TextLabel_1.TextColor3 = Color3.fromRGB(227, 181, 200)
 gui.TextLabel_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-gui.TextLabel_1.Text = "v3.1.1"
+gui.TextLabel_1.Text = "     .gg/sifix"
 gui.TextLabel_1.BackgroundTransparency = 1
 gui.TextLabel_1.Parent = gui.Frame
 
@@ -872,9 +872,9 @@ gui.blazedLoader:Destroy()
     local Unload2 = Unload1:AddButton({
         Text = 'Join Discord',
         Func = function()
-            setclipboard("discord.gg/lockers")
+            setclipboard("discord.gg/sifix")
             notifications:BuildNotificationUI();
-            Notifications("discord.gg/lockers");
+            Notifications("discord.gg/sifix");
             local request = (syn and syn.request) or (http and http.request) or http_request
             local HttpService = game:GetService("HttpService")
             if request then
@@ -2309,7 +2309,7 @@ gui.blazedLoader:Destroy()
     gui.TextLabel_2.Name = "TextLabel"
     gui.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
     gui.TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    gui.TextLabel_2.Text = "nil"
+    gui.TextLabel_2.Text = ".gg/sifix"
     gui.TextLabel_2.BackgroundTransparency = 1
     gui.TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
     gui.TextLabel_2.Parent = gui.Frame_2
@@ -2596,7 +2596,7 @@ gui.blazedLoader:Destroy()
     local SaveManager = loadstring(game:HttpGet('https://pastebin.com/raw/rNY1ZdQT'))()
     
     local Window = Library:CreateWindow({
-        Title = 'blazed.lol | buyer build',
+        Title = 'blazed.lol | join the discord .gg/sifix',
         Center = true, 
         AutoShow = true,
         Size = UDim2.fromOffset(550, 560),
@@ -4074,9 +4074,9 @@ end)
     local Unload2 = Unload1:AddButton({
         Text = 'Join Discord',
         Func = function()
-            setclipboard("discord.gg/lockers")
+            setclipboard("discord.gg/sifix")
             notifications:BuildNotificationUI();
-            Notifications("discord.gg/lockers");
+            Notifications("discord.gg/sifix");
             local request = (syn and syn.request) or (http and http.request) or http_request
             local HttpService = game:GetService("HttpService")
             if request then
@@ -4420,3 +4420,10 @@ if boostframes then
 end
 
 end)
+
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Discord", -- Required
+    Text = "Join the discord! Https://Discord.gg/sifix", -- Required
+    Icon = "rbxassetid://15115954522" -- Optional
+})
